@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Community Hass.io Add-ons: ledfx
+# Runs ledfx
+# ==============================================================================
+
+bashio::log.info "Starting ledfx..."
+
+exec ledfx --config /data/ledfx
