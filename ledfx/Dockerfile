@@ -29,7 +29,7 @@ RUN \
     && rm -fr \
         /tmp/* \
         /etc/nginx \
-    && apk del --no-cache --purge .build-dependencies    
+    && apk del --no-cache --purge .build-dependencies
 # Copy root filesystem
 COPY rootfs /
 
@@ -42,17 +42,17 @@ ARG BUILD_VERSION
 # Labels
 LABEL \
     io.hass.name="ledfx" \
-    io.hass.description="xxx" \
+    io.hass.description="Network based LED effect controller" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="Paul Sinclair <hello@addons.community>" \
-    org.label-schema.description="xxxx" \
+    org.label-schema.description="Network based LED effect controller" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="ledfx" \
     org.label-schema.schema-version="1.0" \
     org.label-schema.url="https://community.home-assistant.io/?u=frenck" \
-    org.label-schema.usage="https://github.com/hassio-addons/addon-xxxtree/master/README.md" \
+    org.label-schema.usage="https://github.com/hassio-addons/addon-ledfx/ree/master/README.md" \
     org.label-schema.vcs-ref=${BUILD_REF} \
-    org.label-schema.vcs-url="https://github.com/hassio-addons/addon-xxx" \
+    org.label-schema.vcs-url="https://github.com/hassio-addons/addon-ledfx" \
     org.label-schema.vendor="Community Hass.io Addons"
