@@ -9,6 +9,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 COPY requirements.txt /tmp/
 
 # Setup base
+ARG BUILD_ARCH=amd64
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r1 \
@@ -22,7 +23,9 @@ RUN \
         nginx=1.16.1-r1 \
         nginx-mod-http-lua=1.16.1-r1 \
         portaudio=190600.20161030-r0 \
-    && pip install --no-cache-dir -r /tmp/requirements.txt \
+    && pip3 install \
+        --find-links "https://wheels.home-assistant.io/alpine-3.10/${BUILD_ARCH}/" \
+        --no-cache-dir -r /tmp/requirements.txt \
     && rm -fr \
         /tmp/* \
         /etc/nginx \
