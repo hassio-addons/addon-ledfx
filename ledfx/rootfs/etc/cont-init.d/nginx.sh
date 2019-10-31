@@ -7,7 +7,6 @@ declare port
 declare certfile
 declare hassio_dns
 declare ingress_interface
-declare ingress_port
 declare keyfile
 
 port=$(bashio::addon.port 80)
