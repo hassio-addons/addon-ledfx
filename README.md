@@ -79,7 +79,7 @@ you are troubleshooting.
 
 ### Option: `ssl`
 
-Enables/Disables SSL (HTTPS) on the web interface of Firefly-III
+Enables/Disables SSL (HTTPS) on the web interface of ledfx
 Panel. Set it `true` to enable it, `false` otherwise.
 
 ### Option: `certfile`
@@ -93,6 +93,11 @@ The certificate file to use for SSL.
 The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
+
+## Known issues and limitations
+
+- Alsa errors may be logged on startup, these should not cause an issue.
+- Ingress is currently unsupported.
 
 ## Changelog & Releases
 
