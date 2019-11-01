@@ -11,7 +11,8 @@
   "startup": "application",
   "arch": [
     "aarch64",
-    "amd64"
+    "amd64",
+    "armv7"
   ],
   "boot": "auto",
   "hassio_api": true,

@@ -6,9 +6,9 @@ variables:
   ADDON_SLUG: "ledfx"
   ADDON_TARGET: "ledfx"
   ADDON_LEGACY_TAGS: "true"
-  ADDON_ARMHF: "false"
   ADDON_I386: "false"
-  ADDON_AARCH64: "false"
-  ADDON_ARMV7: "false"
+  ADDON_ARMHF: "false"
 
   ADDON_AMD64_BASE: "hassioaddons/base-python:3.0.0"
+  ADDON_ARMV7_BASE: "hassioaddons/base-python:3.0.0"
+  ADDON_AARCH64_BASE: "hassioaddons/base-python:3.0.0"
