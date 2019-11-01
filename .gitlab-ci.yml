@@ -10,5 +10,3 @@ variables:
 
   ADDON_AARCH64_BASE: "hassioaddons/base-python:3.0.0"
   ADDON_AMD64_BASE: "hassioaddons/base-python:3.0.0"
-  ADDON_ARMV7_BASE: "hassioaddons/base-python:3.0.0"
-  ADDON_I386_BASE: "hassioaddons/base-python:3.0.0"
