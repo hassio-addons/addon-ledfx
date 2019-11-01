@@ -13,9 +13,12 @@ ARG BUILD_ARCH=amd64
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r1 \
+        ffmpeg-dev=4.1.4-r0 \
         g++=8.3.0-r0 \
         gcc=8.3.0-r0 \
         gfortran=8.3.0-r0 \
+        libsamplerate-dev=0.1.9-r1 \
+        libsndfile-dev=1.0.28-r8 \
         portaudio-dev=190600.20161030-r0 \
     && apk add --no-cache \
         alsa-utils=1.1.9-r0 \
