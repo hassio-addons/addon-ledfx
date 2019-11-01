@@ -22,6 +22,7 @@ RUN \
         portaudio-dev=190600.20161030-r0 \
     && apk add --no-cache \
         alsa-utils=1.1.9-r0 \
+        ffmpeg-libs=4.1.4-r0 \
         lua-resty-http=0.13-r0 \
         nginx=1.16.1-r1 \
         nginx-mod-http-lua=1.16.1-r1 \
