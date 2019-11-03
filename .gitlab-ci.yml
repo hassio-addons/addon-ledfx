@@ -2,7 +2,7 @@
 include: https://raw.githubusercontent.com/hassio-addons/organization/master/gitlabci/addon.yml
 
 variables:
-  ADDON_GITHUB_REPO: "hassio-addons/ledfx"
+  ADDON_GITHUB_REPO: "hassio-addons/addon-ledfx"
   ADDON_SLUG: "ledfx"
   ADDON_TARGET: "ledfx"
   ADDON_LEGACY_TAGS: "true"
