@@ -10,6 +10,10 @@ server {
 
     location / {
         access_by_lua_file /etc/nginx/lua/ha-auth.lua;
+        proxy_set_header Accept-Encoding "";
+    	sub_filter 'ws://' 'wss://';
+    	sub_filter_types application/javascript;
+        sub_filter_once off;
         proxy_pass http://backend;
     }
 }
