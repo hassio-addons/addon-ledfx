@@ -16,4 +16,7 @@ server {
         sub_filter_once off;
         proxy_pass http://backend;
     }
+    location /api/websocket {
+        proxy_pass http://backend;
+    }
 }
