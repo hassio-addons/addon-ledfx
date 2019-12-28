@@ -14,6 +14,9 @@ RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r1 \
         ffmpeg-dev=4.2.1-r3 \
+        g++=9.2.0-r3 \
+        gcc=9.2.0-r3 \
+        gfortran=9.2.0-r3 \
         libsamplerate-dev=0.1.9-r1 \
         libsndfile-dev=1.0.28-r8 \
         portaudio-dev=190600.20161030-r0 \
