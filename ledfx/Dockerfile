@@ -19,11 +19,12 @@ RUN \
         gfortran=9.2.0-r3 \
         libsamplerate-dev=0.1.9-r1 \
         libsndfile-dev=1.0.28-r8 \
-        portaudio-dev=190600.20161030-r0 \
+        portaudio-dev=190600.20161030-r1 \
     && apk add --no-cache \
         ffmpeg-libs=4.2.1-r3 \
         nginx=1.16.1-r4 \
         nginx-mod-http-lua=1.16.1-r4 \
+        portaudio=190600.20161030-r1 \
     && pip3 install \
         --find-links "https://wheels.home-assistant.io/alpine-3.10/${BUILD_ARCH}/" \
         --no-cache-dir -r /tmp/requirements.txt \
