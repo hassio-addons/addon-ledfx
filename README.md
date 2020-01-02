@@ -39,9 +39,6 @@ comparison to installing any other Hass.io add-on.
 1. Start the "ledfx" add-on
 1. Check the logs of the "ledfx" add-on to see if everything went well.
 
-**NOTE**: Do not add this repository to Hass.io, please use:
-`https://github.com/hassio-addons/repository`.
-
 ## Configuration
 
 **Note**: _Remember to restart the add-on when the configuration is changed._
