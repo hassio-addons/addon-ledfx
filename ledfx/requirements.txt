@@ -1,2 +1,2 @@
 pkgconfig==1.5.1
-ledfx==0.3
+ledfx==0.7
