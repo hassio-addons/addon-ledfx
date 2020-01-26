@@ -23,7 +23,7 @@ RUN \
         nginx-mod-http-lua=1.16.1-r6 \
         portaudio-dev=190600.20161030-r1 \
     && pip3 install \
-        --find-links "https://wheels.home-assistant.io/alpine-3.10/${BUILD_ARCH}/" \
+        --find-links "https://wheels.home-assistant.io/alpine-3.11/${BUILD_ARCH}/" \
         --no-cache-dir -r /tmp/requirements.txt \
     && rm -fr \
         /tmp/* \
