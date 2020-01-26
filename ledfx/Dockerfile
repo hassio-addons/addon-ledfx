@@ -13,20 +13,15 @@ ARG BUILD_ARCH=amd64
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r1 \
-        ffmpeg-dev=4.2.1-r3 \
+        cython=0.29.14-r0 \
         g++=9.2.0-r3 \
         gcc=9.2.0-r3 \
         gfortran=9.2.0-r3 \
-        libsamplerate-dev=0.1.9-r1 \
-        libsndfile-dev=1.0.28-r8 \
-        portaudio-dev=190600.20161030-r1 \
     && apk add --no-cache \
-        alsa-utils=1.2.1-r0 \
-        ffmpeg-libs=4.2.1-r3 \
         lua-resty-http=0.15-r0 \
-        nginx=1.16.1-r4 \
-        nginx-mod-http-lua=1.16.1-r4 \
-        portaudio=190600.20161030-r1 \
+        nginx=1.16.1-r6 \
+        nginx-mod-http-lua=1.16.1-r6 \
+        portaudio-dev=190600.20161030-r1 \
     && pip3 install \
         --find-links "https://wheels.home-assistant.io/alpine-3.10/${BUILD_ARCH}/" \
         --no-cache-dir -r /tmp/requirements.txt \
