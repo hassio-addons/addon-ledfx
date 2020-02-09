@@ -1,6 +1,6 @@
 ---
 repository:
-  description: "ledfx - Community Hass.io Add-on for Home Assistant"
+  description: "ledfx - Community Home Assistant Add-on"
   homepage: https://addons.community
   topics: ledfx, hassio-addons, hassio, hass, home-assistant, homeassistant
   private: false
