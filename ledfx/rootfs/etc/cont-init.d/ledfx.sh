@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Home Assistant Add-ons: ledfx
+# Home Assistant Community Add-on: ledfx
 # Configures ledfx
 # ==============================================================================
 

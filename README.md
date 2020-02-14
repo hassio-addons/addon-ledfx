@@ -1,4 +1,4 @@
-# Community Home Assistant Add-ons: ledfx
+# Home Assistant Community Add-on: ledfx
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -115,7 +115,7 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Community Home Assistant Add-ons Discord chat server][discord] for add-on
+- The [Home Assistant Community Add-ons Discord chat server][discord] for add-on
   support and feature requests.
 - The [Home Assistant Discord chat server][discord-ha] for general Home
   Assistant discussions and questions.
@@ -152,7 +152,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2020 Paul Sinclair
+Copyright (c) 2019-2020 Paul Sinclair
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
