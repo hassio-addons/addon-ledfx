@@ -45,12 +45,10 @@ comparison to installing any other Home Assistant add-on.
 
 Example add-on configuration:
 
-```json
-{
-  "ssl": false,
-  "certfile": "fullchain.pem",
-  "keyfile": "privkey.pem"
-}
+```yaml
+ssl: false
+certfile: fullchain.pem
+keyfile: privkey.pem
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
