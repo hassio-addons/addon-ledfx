@@ -18,6 +18,7 @@ RUN \
         gcc=9.2.0-r3 \
         gfortran=9.2.0-r3 \
     && apk add --no-cache \
+        alsa-plugins-pulse=1.2.1-r0 \
         lua-resty-http=0.15-r0 \
         nginx=1.16.1-r6 \
         nginx-mod-http-lua=1.16.1-r6 \
