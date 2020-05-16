@@ -15,7 +15,7 @@ RUN \
         build-base=0.5-r1 \
         cython=0.29.14-r0 \
         g++=9.2.0-r4 \
-        gcc=9.2.0-r3 \
+        gcc=9.2.0-r4 \
         gfortran=9.2.0-r3 \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.1-r0 \
