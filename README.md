@@ -29,83 +29,7 @@ your entire house!
 
 ![ledfx screenshot](images/screenshot.png)
 
-## Installation
-
-The installation of this add-on is pretty straightforward and not different in
-comparison to installing any other Home Assistant add-on.
-
-1. Search for the "ledfx" add-on in the add-on store and install it.
-1. Select the correct audio device for input.
-1. Start the "ledfx" add-on
-1. Check the logs of the "ledfx" add-on to see if everything went well.
-
-## Configuration
-
-**Note**: _Remember to restart the add-on when the configuration is changed._
-
-Example add-on configuration:
-
-```yaml
-ssl: false
-certfile: fullchain.pem
-keyfile: privkey.pem
-```
-
-**Note**: _This is just an example, don't copy and paste it! Create your own!_
-
-### Option: `log_level`
-
-The `log_level` option controls the level of log output by the addon and can
-be changed to be more or less verbose, which might be useful when you are
-dealing with an unknown issue. Possible values are:
-
-- `trace`: Show every detail, like all called internal functions.
-- `debug`: Shows detailed debug information.
-- `info`: Normal (usually) interesting events.
-- `warning`: Exceptional occurrences that are not errors.
-- `error`:  Runtime errors that do not require immediate action.
-- `fatal`: Something went terribly wrong. Add-on becomes unusable.
-
-Please note that each level automatically includes log messages from a
-more severe level, e.g., `debug` also shows `info` messages. By default,
-the `log_level` is set to `info`, which is the recommended setting unless
-you are troubleshooting.
-
-### Option: `ssl`
-
-Enables/Disables SSL (HTTPS) on the web interface of ledfx
-Panel. Set it `true` to enable it, `false` otherwise.
-
-### Option: `certfile`
-
-The certificate file to use for SSL.
-
-**Note**: _The file MUST be stored in `/ssl/`, which is the default_
-
-### Option: `keyfile`
-
-The private key file to use for SSL.
-
-**Note**: _The file MUST be stored in `/ssl/`, which is the default_
-
-## Known issues and limitations
-
-- Alsa errors may be logged on startup, these should not cause an issue.
-- Ingress is currently unsupported.
-
-## Changelog & Releases
-
-This repository keeps a change log using [GitHub's releases][releases]
-functionality. The format of the log is based on
-[Keep a Changelog][keepchangelog].
-
-Releases are based on [Semantic Versioning][semver], and use the format
-of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
-based on the following:
-
-- ``MAJOR``: Incompatible or major changes.
-- ``MINOR``: Backwards-compatible new features and enhancements.
-- ``PATCH``: Backwards-compatible bugfixes and package updates.
+[:books: Read the full add-on documentation][docs]
 
 ## Support
 
@@ -171,7 +95,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
-[alpine-packages]: https://pkgs.alpinelinux.org/packages
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
@@ -183,21 +106,18 @@ SOFTWARE.
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
+[docs]: https://github.com/hassio-addons/addon-ledfx/blob/master/ledfx/DOCS.md
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/community-hass-io-xxxxx/xxxxx
-[sinclairpaul]: https://github.com/sinclairpaul
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-ledfx/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-ledfx/pipelines
-[home-assistant]: https://home-assistant.io
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-ledfx/issues
-[keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-ledfx.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
-[npm-packages]: https://www.npmjs.com
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-ledfx.svg
 [releases]: https://github.com/hassio-addons/addon-ledfx/releases
 [repository]: https://github.com/hassio-addons/repository
-[semver]: http://semver.org/spec/v2.0.0.htm
+[sinclairpaul]: https://github.com/sinclairpaul
