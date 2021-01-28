@@ -72,8 +72,7 @@ The private key file to use for SSL.
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
-functionality. The format of the log is based on
-[Keep a Changelog][keepchangelog].
+functionality.
 
 Releases are based on [Semantic Versioning][semver], and use the format
 of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
@@ -135,7 +134,6 @@ SOFTWARE.
 [forum]: https://community.home-assistant.io/t/community-hass-io-xxxxx/xxxxx
 [sinclairpaul]: https://github.com/sinclairpaul
 [issue]: https://github.com/hassio-addons/addon-ledfx/issues
-[keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [reddit]: https://reddit.com/r/homeassistant
 [releases]: https://github.com/hassio-addons/addon-ledfx/releases
 [semver]: http://semver.org/spec/v2.0.0.htm

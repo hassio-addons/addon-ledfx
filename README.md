@@ -10,7 +10,7 @@
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
-[![GitLab CI][gitlabci-shield]][gitlabci]
+[![Github Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
@@ -101,16 +101,16 @@ SOFTWARE.
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
 [buymeacoffee]: https://www.buymeacoffee.com/sinclairpaul
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-ledfx.svg
-[commits]: https://github.com/hassio-addons/addon-ledfx/commits/master
+[commits]: https://github.com/hassio-addons/addon-ledfx/commits/main
 [contributors]: https://github.com/hassio-addons/addon-ledfx/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
-[docs]: https://github.com/hassio-addons/addon-ledfx/blob/master/ledfx/DOCS.md
+[docs]: https://github.com/hassio-addons/addon-ledfx/blob/main/ledfx/DOCS.md
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/community-hass-io-xxxxx/xxxxx
-[gitlabci-shield]: https://gitlab.com/hassio-addons/addon-ledfx/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/hassio-addons/addon-ledfx/pipelines
+[github-actions-shield]: https://github.com/hassio-addons/addon-ledfx/workflows/CI/badge.svg
+[github-actions]: https://github.com/hassio-addons/addon-ledfx/actions
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-ledfx/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-ledfx.svg
