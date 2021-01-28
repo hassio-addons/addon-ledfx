@@ -18,11 +18,14 @@ RUN \
         gcc=10.2.1_pre1-r3 \
         gfortran=10.2.1_pre1-r3 \
         openblas-dev=0.3.13-r0 \
+        python3-dev=3.8.7-r0 \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.1-r0 \
         lua-resty-http=0.15-r0 \
         openblas=0.3.13-r0 \
         portaudio-dev=190600.20161030-r1 \
+        py3-pip=20.3.4-r0 \
+        python3=3.8.7-r0 \
     && pip3 install \
         --find-links "https://wheels.home-assistant.io/alpine-3.11/${BUILD_ARCH}/" \
         --no-cache-dir -r /tmp/requirements.txt \
