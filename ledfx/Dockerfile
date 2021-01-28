@@ -24,6 +24,8 @@ RUN \
         lua-resty-http=0.15-r0 \
         openblas=0.3.13-r0 \
         portaudio-dev=190600.20161030-r1 \
+        pulseaudio=14.1-r0 \
+        pulseaudio-alsa=14.1-r0 \
         py3-pip=20.3.4-r0 \
         python3=3.8.7-r0 \
     && pip3 install \
