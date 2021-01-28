@@ -15,6 +15,7 @@ RUN \
         build-base=0.5-r2 \
         cython=0.29.21-r0 \
         g++=10.2.1_pre1-r3 \
+        gcc=10.2.1_pre1-r3 \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.1-r0 \
         lua-resty-http=0.15-r0 \
