@@ -20,7 +20,7 @@ RUN \
         openblas-dev=0.3.13-r0 \
         python3-dev=3.8.7-r0 \
     && apk add --no-cache \
-        alsa-plugins-pulse=1.2.1-r0 \
+        alsa-plugins-pulse=1.2.2-r1 \
         lua-resty-http=0.15-r0 \
         openblas=0.3.13-r0 \
         portaudio-dev=190600.20161030-r1 \
