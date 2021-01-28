@@ -9,6 +9,7 @@ your entire house!
 
 This application is designed to be run locally, not exposed to the Internet.
 Please do not allow access to it externally.
+
 ## Installation
 
 The installation of this add-on is pretty straightforward and not different in
