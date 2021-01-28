@@ -17,11 +17,11 @@ RUN \
         g++=10.2.1_pre1-r3 \
         gcc=10.2.1_pre1-r3 \
         gfortran=10.2.1_pre1-r3 \
+        openblas-dev=0.3.13-r0 \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.1-r0 \
         lua-resty-http=0.15-r0 \
-        nginx=1.16.1-r6 \
-        nginx-mod-http-lua=1.16.1-r6 \
+        openblas=0.3.13-r0 \
         portaudio-dev=190600.20161030-r1 \
     && pip3 install \
         --find-links "https://wheels.home-assistant.io/alpine-3.11/${BUILD_ARCH}/" \
