@@ -9,6 +9,8 @@ if ! bashio::fs.directory_exists "/data/ledfx"; then
     mkdir -p /data/ledfx
 fi
 
+mkdir -p /root/.ledfx
+
 #Generate config if not exist
 if ! bashio::fs.file_exists "/data/ledfx/config.yaml"; then
     bashio::log "Creating default config"

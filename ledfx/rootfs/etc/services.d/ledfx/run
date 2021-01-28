@@ -6,4 +6,4 @@
 
 bashio::log.info "Starting ledfx..."
 
-exec ledfx --config /data/ledfx
+exec ledfx --offline --config /data/ledfx
