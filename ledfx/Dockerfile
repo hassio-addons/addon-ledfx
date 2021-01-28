@@ -23,6 +23,7 @@ RUN \
         alsa-plugins-pulse=1.2.2-r1 \
         ffmpeg-libs=4.3.1-r3 \
         lua-resty-http=0.15-r0 \
+        nginx=1.18.0-r13 \
         openblas=0.3.13-r0 \
         portaudio-dev=190600.20161030-r1 \
         pulseaudio=14.1-r0 \
