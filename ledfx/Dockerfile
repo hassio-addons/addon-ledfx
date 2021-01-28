@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base-python:5.2.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/aarch64:9.1.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -12,19 +12,26 @@ COPY requirements.txt /tmp/
 ARG BUILD_ARCH=amd64
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        build-base=0.5-r1 \
-        cython=0.29.14-r0 \
-        g++=9.2.0-r4 \
-        gcc=9.2.0-r4 \
-        gfortran=9.2.0-r4 \
+        build-base=0.5-r2 \
+        cython=0.29.21-r0 \
+        g++=10.2.1_pre1-r3 \
+        gcc=10.2.1_pre1-r3 \
+        gfortran=10.2.1_pre1-r3 \
+        openblas-dev=0.3.13-r0 \
+        python3-dev=3.8.7-r0 \
     && apk add --no-cache \
-        alsa-plugins-pulse=1.2.1-r0 \
+        alsa-plugins-pulse=1.2.2-r1 \
+        ffmpeg-libs=4.3.1-r3 \
         lua-resty-http=0.15-r0 \
-        nginx=1.16.1-r6 \
-        nginx-mod-http-lua=1.16.1-r6 \
+        nginx=1.18.0-r13 \
+        openblas=0.3.13-r0 \
         portaudio-dev=190600.20161030-r1 \
+        pulseaudio=14.1-r0 \
+        pulseaudio-alsa=14.1-r0 \
+        py3-pip=20.3.4-r0 \
+        python3=3.8.7-r0 \
     && pip3 install \
-        --find-links "https://wheels.home-assistant.io/alpine-3.11/${BUILD_ARCH}/" \
+        --find-links "https://wheels.home-assistant.io/alpine-3.13/${BUILD_ARCH}/" \
         --no-cache-dir -r /tmp/requirements.txt \
     && rm -fr \
         /tmp/* \
