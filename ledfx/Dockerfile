@@ -19,6 +19,7 @@ RUN \
         gfortran=10.2.1_pre1-r3 \
         openblas-dev=0.3.13-r0 \
         python3-dev=3.8.7-r0 \
+        zlib-dev=1.2.11-r3 \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.2-r1 \
         ffmpeg-libs=4.3.1-r3 \
