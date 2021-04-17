@@ -18,7 +18,7 @@ RUN \
         gcc=10.2.1_pre1-r3 \
         gfortran=10.2.1_pre1-r3 \
         openblas-dev=0.3.13-r0 \
-        python3-dev=3.8.7-r1 \
+        python3-dev=3.8.8-r0 \
         zlib-dev=1.2.11-r3 \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.2-r1 \
@@ -29,7 +29,7 @@ RUN \
         pulseaudio=14.1-r0 \
         pulseaudio-alsa=14.1-r0 \
         py3-pip=20.3.4-r0 \
-        python3=3.8.7-r1 \
+        python3=3.8.8-r0 \
     && pip3 install \
         --find-links "https://wheels.home-assistant.io/alpine-3.13/${BUILD_ARCH}/" \
         --no-cache-dir -r /tmp/requirements.txt \
