@@ -1,5 +1,5 @@
 {
-  "name": "Dummy LED",
-  "url": "http://www.addons/addons",
-  "maintainer": "HomeAssistant Team <info@home-assistant.io>"
+  "name": "Dummy LEDfx 10.5 something",
+  "url": "https://github.com/Bolme123/addon-ledfx",
+  "maintainer": "pleswork <inso@home-assistant.io>"
 }
