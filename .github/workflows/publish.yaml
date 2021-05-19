@@ -22,5 +22,5 @@ jobs:
         with:
           args: |
             --all \
-            --target /addon-ledfx/blob/main/ledfx/ \
+            --target /addon-ledfx/blob/main/ledfx \
             --docker-hub user-name-or-space-name
