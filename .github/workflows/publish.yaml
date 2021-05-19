@@ -23,6 +23,6 @@ jobs:
           args: |
             --all \
             -r https://github.com/Bolme123/addon-ledfx \
-            --target /ledfx \
+            --target ledfx \
             -b main
             --docker-hub user-name-or-space-name
