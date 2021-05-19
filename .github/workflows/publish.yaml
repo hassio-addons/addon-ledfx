@@ -22,7 +22,8 @@ jobs:
         with:
           args: |
             --all \
-            --target /bolme123/addon-ledfx/ledfx \
-            -b main
+            -r https://github.com/Bolme123/addon-ledfx \
+            -t addon-ledfx/ledfx \
+            -b main \
             --docker-hub hmm
             
