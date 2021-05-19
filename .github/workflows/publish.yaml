@@ -22,7 +22,7 @@ jobs:
         with:
           args: |
             --all \
-            --target remotes/origin/main/ledfx \
+            --target origin/main/ledfx \
             -b main
             --docker-hub hmm
             
