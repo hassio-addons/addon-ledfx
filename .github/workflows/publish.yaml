@@ -21,9 +21,7 @@ jobs:
         uses: home-assistant/builder@master
         with:
           args: |
-            --privileged \
             --all \
-            -r https://github.com/Bolme123/addon-ledfx \
             --target /ledfx \
             -b main
-            --docker-hub user-name-or-space-name
+            --docker-hub hmm
