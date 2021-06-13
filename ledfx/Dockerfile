@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.2.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.2.2
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -22,8 +22,8 @@ RUN \
         zlib-dev=1.2.11-r3 \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.2-r1 \
-        ffmpeg-libs=4.3.1-r3 \
-        nginx=1.18.0-r13 \
+        ffmpeg-libs=4.3.1-r4 \
+        nginx=1.18.0-r15 \
         openblas=0.3.13-r0 \
         portaudio-dev=190600.20161030-r1 \
         pulseaudio=14.1-r0 \
