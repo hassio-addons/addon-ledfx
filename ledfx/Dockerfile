@@ -35,11 +35,11 @@ RUN \
         --find-links "https://wheels.home-assistant.io/alpine-3.14/${BUILD_ARCH}/" \
         --no-cache-dir -r /tmp/requirements.txt \
     \
-    && apk del --no-cache --purge .build-dependencies
+    && apk del --no-cache --purge .build-dependencies \
     && rm -fr \
         /etc/nginx \
         /root/.cache \
-        /tmp/* \
+        /tmp/*
 
 # Copy root filesystem
 COPY rootfs /
