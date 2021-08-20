@@ -11,7 +11,8 @@
   "auth_api": true,
   "map": ["ssl"],
   "ports": {
-    "80/tcp": 5333
+    "80/tcp": 5333,
+    "8888/tcp": 8888
   },
   "ports_description": {
     "80/tcp": "Web interface"
