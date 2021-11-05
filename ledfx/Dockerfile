@@ -20,7 +20,7 @@ RUN \
         zlib-dev=1.2.11-r3 \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.2-r1 \
-        ffmpeg-libs=4.4-r1 \
+        ffmpeg-libs=4.4.1-r0 \
         nginx=1.20.1-r3 \
         openblas=0.3.15-r0 \
         portaudio-dev=190600.20161030-r1 \
