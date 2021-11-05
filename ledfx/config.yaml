@@ -4,7 +4,7 @@ version: dev
 slug: ledfx
 description: A network based LED effect controller with support for advanced real-time audio effects!
 url: https://github.com/hassio-addons/addon-ledfx
-webui: '[PROTO:ssl]://[HOST]:[PORT:80]'
+webui: "[PROTO:ssl]://[HOST]:[PORT:80]"
 audio: true
 arch:
   - aarch64
