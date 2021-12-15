@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:10.2.2
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:11.0.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -13,26 +13,26 @@ ARG BUILD_ARCH=amd64
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r2 \
-        cython=0.29.22-r2 \
-        openblas-dev=0.3.15-r0 \
-        py3-numpy-dev=1.20.3-r0 \
-        python3-dev=3.9.5-r1 \
+        cython=0.29.24-r0 \
+        openblas-dev=0.3.18-r1 \
+        py3-numpy-dev=1.21.4-r0 \
+        python3-dev=3.9.7-r4 \
         zlib-dev=1.2.11-r3 \
     && apk add --no-cache \
-        alsa-plugins-pulse=1.2.2-r1 \
-        ffmpeg-libs=4.4.1-r0 \
-        nginx=1.20.1-r3 \
-        openblas=0.3.15-r0 \
-        portaudio-dev=190600.20161030-r1 \
-        pulseaudio-alsa=14.2-r5 \
-        pulseaudio=14.2-r5 \
-        py3-numpy=1.20.3-r0 \
+        alsa-plugins-pulse=1.2.5-r2 \
+        ffmpeg-libs=4.4.1-r2 \
+        nginx=1.20.2-r0 \
+        openblas=0.3.18-r1 \
+        portaudio-dev=19.7.0-r0 \
+        pulseaudio-alsa=15.0-r2 \
+        pulseaudio=15.0-r2 \
+        py3-numpy=1.21.4-r0 \
         py3-pip=20.3.4-r1 \
-        py3-pynacl=1.4.0-r1 \
-        python3=3.9.5-r1 \
+        py3-pynacl=1.4.0-r2 \
+        python3=3.9.7-r4 \
     \
     && pip3 install \
-        --find-links "https://wheels.home-assistant.io/alpine-3.14/${BUILD_ARCH}/" \
+        --find-links "https://wheels.home-assistant.io/alpine-3.15/${BUILD_ARCH}/" \
         --no-cache-dir -r /tmp/requirements.txt \
     \
     && apk del --no-cache --purge .build-dependencies \
