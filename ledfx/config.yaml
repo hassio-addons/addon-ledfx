@@ -29,3 +29,4 @@ schema:
   certfile: str
   keyfile: str
   ssl: bool
+  leave_front_door_open: bool?

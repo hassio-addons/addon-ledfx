@@ -15,6 +15,7 @@ server {
     ssl_certificate_key /ssl/{{ .keyfile }};
     {{ end }}
 
+    {{ if not .leave_front_door_open }}
     location = /authentication {
         internal;
         proxy_pass              http://supervisor/auth;
@@ -22,6 +23,7 @@ server {
         proxy_set_header        Content-Length "";
         proxy_set_header        X-Supervisor-Token "{{ env "SUPERVISOR_TOKEN" }}";
     }
+    {{ end }}
 
     location  /api/websocket {
         proxy_pass http://backend;
@@ -34,8 +36,10 @@ server {
     	sub_filter_types application/javascript;
         sub_filter_once off;
         {{ end }}
+        {{ if not .leave_front_door_open }}
         auth_request /authentication;
         auth_request_set $auth_status $upstream_status;
+        {{ end }}
         proxy_pass http://backend;
     }
 }
