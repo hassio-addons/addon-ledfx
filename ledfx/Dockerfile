@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.3
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -15,16 +15,16 @@ RUN \
         build-base=0.5-r3 \
         cython=0.29.24-r1 \
         py3-pip=22.1.1-r0 \
-        python3-dev=3.10.4-r0 \
-        zlib-dev=1.2.12-r1 \
+        python3-dev=3.10.5-r0 \
+        zlib-dev=1.2.12-r3 \
     && apk add --no-cache \
-        alsa-plugins-pulse=1.2.6-r1 \
+        alsa-plugins-pulse=1.2.7.1-r0 \
         ffmpeg-libs=5.0.1-r1 \
         nginx=1.22.0-r1 \
         portaudio-dev=19.7.0-r0 \
         pulseaudio-alsa=15.0-r2 \
         pulseaudio=15.0-r2 \
-        python3=3.10.4-r0 \
+        python3=3.10.5-r0 \
     \
     && pip3 install -r /tmp/requirements.txt \
     \
