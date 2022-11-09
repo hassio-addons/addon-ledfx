@@ -20,7 +20,7 @@ RUN \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.7.1-r0 \
         ffmpeg-libs=5.0.1-r1 \
-        nginx=1.22.0-r1 \
+        nginx=1.22.1-r0 \
         portaudio-dev=19.7.0-r0 \
         pulseaudio-alsa=15.0-r2 \
         pulseaudio=15.0-r2 \
