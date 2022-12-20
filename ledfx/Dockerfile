@@ -14,7 +14,6 @@ RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r3 \
         cython=0.29.32-r0 \
-        py3-pip=22.3.1-r1 \
         python3-dev=3.10.9-r1 \
         zlib-dev=1.2.13-r0 \
     && apk add --no-cache \
@@ -24,6 +23,8 @@ RUN \
         portaudio-dev=19.7.0-r0 \
         pulseaudio-alsa=16.1-r6 \
         pulseaudio=16.1-r6 \
+        py3-packaging=21.3-r2 \
+        py3-pip=22.3.1-r1 \
         python3=3.10.9-r1 \
     \
     && pip3 install -r /tmp/requirements.txt \
