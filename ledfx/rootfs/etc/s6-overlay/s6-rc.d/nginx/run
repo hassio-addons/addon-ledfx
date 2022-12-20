@@ -1,13 +1,11 @@
 #!/command/with-contenv bashio
+# shellcheck shell=bash
 # ==============================================================================
 # Home Assistant Community Add-on: ledfx
 # Runs the Nginx daemon
 # ==============================================================================
 
-# Wait for ttyd to become available
-s6-svwait -u -t 5000 /var/run/s6/services/ledfx
-
-bashio::log.info "Starting NGinx..."
+bashio::log.info "Starting NGINX..."
 
 # Disable HA Authentication if front door is open
 if bashio::config.true 'leave_front_door_open'; then
