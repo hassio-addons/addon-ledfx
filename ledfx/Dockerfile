@@ -16,6 +16,7 @@ RUN \
         cython=0.29.32-r0 \
         python3-dev=3.10.9-r1 \
         zlib-dev=1.2.13-r0 \
+        linux-headers=5.19.5-r0 \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.7.1-r0 \
         ffmpeg-libs=5.1.2-r1 \
